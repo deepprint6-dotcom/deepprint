@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep Print | Custom 3D printing for idols, gifts and parts</title>
+<meta name="description" content="Send your 3D model or idea. Deep Print prints it, paints it if you like, and delivers it to your door.">
+<meta name="theme-color" content="#02040A">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+Kannada:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#"><img src="favicon.png" alt=""> <span>Deep <b>Print</b></span></a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a class="keep" href="#order">Order</a>
+      <a href="#work">Our work</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Your idea, printed with care.</h1>
+        <p class="lead">Send us your 3D model or describe what you want. Deep Print makes it, paints it if you ask, and delivers it to your door.</p>
+        <a class="btn" href="#order">Place an order</a>
+        <a class="btn ghost" href="#work">See our work</a>
+      </div>
+      <img class="logo-hero" src="logo.png" alt="Deep Print 3D Printing logo with a baby Ganesha being printed inside the letter D" width="1200" height="784">
+    </div>
+
+
+    <section id="how">
+      <h2>How ordering works</h2>
+      <p class="sub">No account needed. Fill the form and we continue on WhatsApp.</p>
+      <ol class="steps">
+        <li><strong>Send your request</strong><span>Share a model link or describe the idea.</span></li>
+        <li><strong>Get a quote</strong><span>We confirm size, material and price on WhatsApp.</span></li>
+        <li><strong>Pay and we print</strong><span>Pay by UPI and we start printing.</span></li>
+        <li><strong>Delivery</strong><span>Packed safely and shipped to your address.</span></li>
+      </ol>
+    </section>
+
+    <section id="order">
+      <h2>Place your order</h2>
+      <p class="sub">When you press the button, WhatsApp opens with your details filled in. Send the message and attach your STL file in the same chat.</p>
+      <div class="formbox">
+        <form id="orderForm" novalidate>
+          <div class="grid">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" required>
+            </div>
+            <div>
+              <label for="qty">Quantity</label>
+              <input id="qty" name="qty" type="number" min="1" value="1">
+            </div>
+            <div class="full">
+              <label for="address">Delivery address</label>
+              <textarea id="address" name="address" autocomplete="street-address" required></textarea>
+            </div>
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" autocomplete="address-level2" required>
+            </div>
+            <div>
+              <label for="pin">Pincode</label>
+              <input id="pin" name="pin" inputmode="numeric" maxlength="6" autocomplete="postal-code" required>
+            </div>
+          </div>
+          <p style="margin-top:22px"><button class="btn" type="submit">Send order on WhatsApp</button></p>
+          <div id="status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>What we print</h2>
+      <p class="sub">Replace the blue blocks with photos of your own prints. Real photos sell better than anything else on this page.</p>
+      <div class="work">
+        <article class="tile">
+          <div class="img"></div>
+          <div class="txt"><h3>Idols and statues</h3><p>Deities, busts and figurines, printed in parts and finished by hand.</p></div>
+        </article>
+        <article class="tile">
+          <div class="img"></div>
+          <div class="txt"><h3>Gifts and name boards</h3><p>Keychains, nameplates, lamps and custom desk pieces.</p></div>
+        </article>
+        <article class="tile">
+          <div class="img"></div>
+          <div class="txt"><h3>Parts and prototypes</h3><p>Brackets, holders, covers and models for college projects.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Deep Print</span>
+    <span><a href="https://instagram.com/YOUR_INSTAGRAM">Instagram</a> &nbsp; <a id="waLink" href="#">WhatsApp</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
